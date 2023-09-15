@@ -1,0 +1,31 @@
+.flex-container {
+    min-height: 100vh;
+    background: lightblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+} 
+
+.flex-item {
+    background: blue;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+}
+@media screen and (max-width: 600px){
+    .flex-container{
+        background: blue;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+    }
+    .flex-item {
+        background: lightblue;
+        width: 20vw;
+    }
+}
